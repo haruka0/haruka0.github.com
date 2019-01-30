@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>harukablog</title>
+  <title>frp | harukablog</title>
   
   
 
@@ -140,32 +140,15 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            
-
-<section class="post-list">
-    
-      
-        
-      
-        
-      
-    
-    
-      
-        <div class="post-wrapper">
-          <article class="post reveal ">
-    
+            <article id="post" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+  
 <section class="meta">
   
   <div class="meta" id="header-meta">
     
-      <h2 class="title">
-          <a href="/2019/01/28/frp/">
-              
-                  frp
-              
-          </a>
-      </h2>
+      
+          <h1 class="title">frp</h1>
+      
     
 
     
@@ -180,6 +163,12 @@
     
 
     
+      
+        <div class="metatag browse busuanzi"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          &nbsp;<span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
+      
+    
 
     
 
@@ -187,6 +176,7 @@
 </section>
 
     <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
         <p>最近发现vultr的vps原来可以访问ipv6的，想打开以前的pt站的我就选了台服务器试试，byr可以访问。有了vps,<br>可以干的事情就很多了，例如部署ssr服务，建站，还有就是内网穿透。因为ipv4地址不够的缘故，我们大多数人都没有公网IP，想实现家里和公司内网互联就很困难，而vps就提供了一个公网ip，我们可以利用这个公网IP  来实现远程互联。<br>frp是github上的一个开源的工具，地址：<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">点击这里</a><br>github上有很详细的中文文档说明，这里主要说一下怎么使用。</p>
 <h3 id="需要条件"><a href="#需要条件" class="headerlink" title="需要条件"></a>需要条件</h3><p>1.首先要有一台拥有公网ip的服务器,这里叫它s,然后是你想要远程访问的机器叫它c1,你现在身边的机器叫它c2。</p>
 <h3 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h3><p>2.然后我们去上面的地址下载最新版，注意根据自己的系统选择版本下载下来后放到服务器s和访问目标机器c1各<br>一份，然后解压。解压后的文件里面主要有<br>服务器s用的文件<br>frps.exe,<br>frps.ini,<br>frps_full.ini<br>以及客户端c1用的文件<br>frpc.exe<br>frpc.ini<br>frpc_full.ini<br>     这些文件其实主要用到的就exe文件和ini配置文件，full.ini文件是配置的全量版本，需要的话可以把<br>full.ini里的配置复制到.ini里面使用。</p>
@@ -211,84 +201,86 @@
 <p>这里的bash是linux什么版本是根据你安装的linux版本来的，默认好像Ubuntu 16，<br>是可以切换的，切换命令为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig /l</span><br></pre></td></tr></table></figure></p>
 <p>然后自动启动sshd服务。<br>首先要看看wsl里面装了sshd没有，没有的话可以装一下<br>新版本的win10预装了win平台下的ssh和sshd，如果要用wsl里面的sshd，最好关了win平台下的sshd,不然端口会被占用,除非改掉端口<br>安装sshd<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove openssh-server</span><br><span class="line">sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure></p>
 
+      </div>
+        
+          <section class="meta" id="footer-meta">
+            
+              <time class="metatag time" itemprop="dateUpdated" datetime="2019-01-31T00:05:10+08:00" content="2019-01-31"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
+                &nbsp;2019-01-31
+              </time>
+            
+            
+                
+                <div class="metatag tags"><a class="tag" href="/tags/frp，内网穿透/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;frp，内网穿透</a></div>
+            
+            
+          </section>
         
 
         
-            <div class="full-width auto-padding tags">
+            <div class="prev-next">
                 
-                    <a href="/tags/frp，内网穿透/"><i class="fas fa-hashtag fa-fw"></i>frp，内网穿透</a>
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/01/24/hello-world/" rel="prev" title="Hello World">
+                                    
+                                        Hello World
+                                    
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
                 
             </div>
         
+
     </section>
+
 </article>
 
-        </div>
-      
-    
-      
-        <div class="post-wrapper">
-          <article class="post reveal ">
-    
-<section class="meta">
-  
-  <div class="meta" id="header-meta">
-    
-      <h2 class="title">
-          <a href="/2019/01/24/hello-world/">
-              
-                  Hello World
-              
-          </a>
-      </h2>
-    
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
 
-    
-      <time class="metatag time">
-        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-01-24
-      </time>
-    
 
-    
-      
+<br>
 
-    
+<!-- 显示推荐文章和评论 -->
 
-    
 
-    
 
-  </div>
-</section>
-
+  <article class="post white-box comments">
     <section class="article typo">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-        
-
-        
-    </section>
-</article>
-
-        </div>
       
-    
-</section>
+        
+
+    <div class="recommended_posts">
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;相关文章</h4>
+        <ul>
+            
+                <li><a href="http://yoursite.com/2019/01/24/hello-world/">Hello World</a></li>
+            
+        </ul>
+    </div>
+
+
+      
+
+      
+    </section>
+  </article>
 
 
 
-<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-
-
-
+<script>
+    window.subData = {
+        title: 'frp',
+        tools: true
+    }
+</script>
 
 
         </div>
@@ -378,6 +370,28 @@
         
 
 
+  <section class="music">
+    
+<header class="pure">
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="http://music.163.com/#/user/home?id=269724541" title="http://music.163.com/#/user/home?id=269724541">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class="content pure">
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer" data-theme="#1BCDFC" data-mode="circulation" data-server="netease" data-type="playlist" data-id="369153769" data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
 
       
     
@@ -386,6 +400,20 @@
       
       
         
+  <section class="toc-wrapper">
+    
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class="content pure">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#需要条件"><span class="toc-text">需要条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载文件"><span class="toc-text">下载文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#默认配置"><span class="toc-text">默认配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置windows远程桌面连接"><span class="toc-text">配置windows远程桌面连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服务开机启动"><span class="toc-text">服务开机启动</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#win平台"><span class="toc-text">win平台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#linux"><span class="toc-text">linux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#闲的蛋疼配置远程访问win10下的linux子系统wsl"><span class="toc-text">闲的蛋疼配置远程访问win10下的linux子系统wsl</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
       
     
